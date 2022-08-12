@@ -1,11 +1,18 @@
 const express = require("express");
 const app = express();
 const userRoutes = require("./routes/users");
+const cors = require("cors");
 
 const { scheduler, runUserSchedule } = require("./helpers");
 
 // json middleware
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.get("/", (req, res) => {
   res.send(

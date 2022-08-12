@@ -73,6 +73,10 @@ const getMessages = () => {
   ];
 };
 
+const getMessagesByIDs = (sentIDs) => {
+  return getMessages().filter((message) => sentIDs.includes(message.id));
+};
+
 const getUnSentMessages = (sentIDs) => {
   return getMessages().filter((message) => !sentIDs.includes(message.id));
 };
@@ -90,7 +94,10 @@ const scheduler = (fn, interval) => {
 };
 
 const getAllUsers = () => {
-  return users;
+  let instanceUsers = users.map((user) => {
+    return { ...user, sentMessages: getMessagesByIDs(user.sentMessages) };
+  });
+  return instanceUsers;
 };
 
 const addNewUser = (user) => {
