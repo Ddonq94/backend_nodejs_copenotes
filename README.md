@@ -14,7 +14,7 @@ The app stores the messages and the users in variables locally and mails are sen
 username: `birthdayhub2021@gmail.com`
 password: `12AB34cd@`
 
-The frontend (details in the repo Readme) [https://bitbucket.org/dejiDonq/frontend_react_type/src/master/](https://bitbucket.org/dejiDonq/frontend_react_type/src/master/) has to be running to allow access to the user creation form and viewing users and their sent messages
+The frontend (details in the repo Readme) [https://github.com/Ddonq94/react_typescript_copenotes](https://github.com/Ddonq94/react_typescript_copenotes) has to be running locally to allow access to the user creation form and viewing users and their sent messages
 
 Both can be setup on the same host as they run on different ports
 
