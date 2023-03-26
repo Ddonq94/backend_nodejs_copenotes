@@ -1,5 +1,7 @@
 # Getting Started with Copenotes Backend Nodejs App
 
+Nodejs app that sends random motivational messages from a list to people at regular intervals with no repetition
+
 In the project directory, you can run:
 
 ### `npm start`
